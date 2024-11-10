@@ -1,0 +1,22 @@
+Características de plantas:
+- nombre común
+-  nombre cientifico
+- especie y familia
+- zona del mundo de la que proviene
+- entorno(bosque, jungla)
+- humedad ambiental
+- tipo de tierra necessaria
+- frecuencia de riego aprox
+-  cantidad de luz en horas
+- plagas frecuentes 
+- nutrientes necesARIOS
+- tipo de propagacion(semilla, esqueje, bulbos)
+- ciclo de vida(anual, estacional,etc)
+
+
+tipo de plantas para decirle a chatgpt:
+- Tropicales
+- interior
+
+que no salgan:
+frutales

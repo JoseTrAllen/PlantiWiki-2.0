@@ -1,0 +1,6 @@
+{
+  "plantas": [
+    { "id": 1, "nombre": "Aloe Vera", "descripcion": "Planta medicinal" },
+    { "id": 2, "nombre": "Orquídea", "descripcion": "Planta ornamental" }
+  ]
+}
