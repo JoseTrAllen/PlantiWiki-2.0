@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Oxygen:wght@300;400;700&display=swap");
 
+:root {
+  --color-1: #97b280;
+  --color-2: #062309;
+  --color-3: #153c2b;
+  /* Los colores 4 y 5 son degradados de una misma card*/
+  --color-4: #1a4327;
+  --color-5: #1a4028;
+  /* Los colores 6 y 7 son degradados de una misma card*/
+  --color-6: #bde1ae;
+  --color-7: #badbab;
+  /* Los colores 8 y 9 son degradados de una misma card*/
+  --color-8: #658c63;
+  --color-9: #396341;
+}
+
+/* Las fuentes a usar son:
+- Merriweather
+- Montserrat
+- Lato
+*/
+
 * {
   padding: 0;
   margin: 0;
