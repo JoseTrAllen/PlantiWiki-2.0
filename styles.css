@@ -33,15 +33,17 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100dvw;
   display: flex;
-  background-color: white;
+  background-color: #fbfadab9;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 20px 50px;
 }
 
 .logo-image {
-  width: 115px;
+  width: 200px;
 }
 
 .span-login-header {
@@ -53,12 +55,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #fbfada;
+  color: var(--color-2);
 }
 
 #login-icon {
-  font-size: 3rem;
-  color: #fbfada;
+  font-size: 2rem;
+  color: var(--color-2);
   cursor: pointer;
 }
 
@@ -74,20 +76,33 @@ a {
   transform: scale(0.8);
 }
 
-.h1-section {
+.title-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/sliderMonstera.jpg);
+  /* background-image: url(assets/sliderMonstera.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 100;
+.intro-section {
+  padding: 0 50px;
+}
+
+.intro-section h1 {
+  font-size: 5rem;
   text-align: center;
   color: #fbfada;
 }
 
-h2 {
+.intro-section h2 {
+  font-size: 2rem;
+  color: #fbfada;
   margin: 10px 0px;
   text-align: center;
 }
