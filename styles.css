@@ -28,7 +28,6 @@
 }
 
 body {
-  background-color: var(--color-1);
   font-family: "Funnel Display", sans-serif;
 }
 
@@ -36,44 +35,47 @@ body {
   position: fixed;
   width: 100dvw;
   display: flex;
-  background-color: #fbfadab9;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 20px 50px;
 }
 
 .logo-image {
-  width: 200px;
+  width: 250px;
 }
 
-.span-login-header {
+.menu-header {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-2);
+  color: #fbfada;
+  letter-spacing: 2px;
 }
 
-#login-icon {
-  font-size: 2rem;
-  color: var(--color-2);
+.header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
   cursor: pointer;
 }
 
-#login-icon:hover {
-  border: 1px solid #fbfada;
-  border-radius: 50%;
-  transform: scale(1.1);
+.header a:active {
+  transform: scale(0.9);
 }
 
-#login-icon:active {
-  border: 1px solid #fbfada;
-  border-radius: 50%;
-  transform: scale(0.8);
+.log-menu {
+  width: 35px;
+  border: 2px solid #fbfada;
+  border-radius: 50px;
+}
+
+.log-menu:hover {
+  transform: scale(1.1);
 }
 
 .title-section {
@@ -83,10 +85,11 @@ a {
   align-items: center;
   width: 100dvw;
   height: 100dvh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
     url(assets/sliderMonstera.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .intro-section {
@@ -104,6 +107,18 @@ a {
   color: #fbfada;
   margin: 10px 0px;
   text-align: center;
+}
+
+.mobile-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.mobile-links img {
+  width: 200px;
 }
 
 p {
