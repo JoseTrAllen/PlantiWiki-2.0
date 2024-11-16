@@ -121,6 +121,11 @@ a {
   width: 200px;
 }
 
+.mobile-links img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 p {
   text-align: center;
 }
