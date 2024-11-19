@@ -76,6 +76,7 @@ body {
   display: block;
   flex-direction: column;
 }
+
 .menu-header {
   display: flex;
   gap: 40px;
