@@ -45,6 +45,37 @@ body {
   width: 250px;
 }
 
+.hamburger-div {
+  display: none;
+  gap: 8px;
+}
+
+.hamburger-svc {
+  width: 50px;
+}
+
+.hamburger-svc:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.toogle-menu {
+  display: none;
+}
+
+.toogle-menu.active {
+  display: flex;
+  justify-content: right;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.toogle-menu ul {
+  color: #fbfada;
+  list-style: none;
+  display: block;
+  flex-direction: column;
+}
 .menu-header {
   display: flex;
   gap: 40px;
@@ -72,6 +103,7 @@ a {
   width: 35px;
   border: 2px solid #fbfada;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .log-menu:hover {
@@ -90,6 +122,17 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .title-section {
+  }
+  .menu-header {
+    display: none;
+  }
+  .hamburger-div {
+    display: flex;
+  }
 }
 
 .intro-section {
