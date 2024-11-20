@@ -64,10 +64,14 @@ body {
 }
 
 .toogle-menu.active {
-  display: flex;
-  justify-content: right;
-  z-index: 1;
-  padding-top: 100px;
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 90dvw;
+  padding: 20px;
+  border: none;
+  border-radius: 16px;
+  background-color: #062309;
 }
 
 .toogle-menu ul {
