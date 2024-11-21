@@ -47,3 +47,9 @@ const hamburgerMenu = document.querySelector(".toogle-menu");
 hamburgerButton?.addEventListener("click", () => {
   hamburgerMenu?.classList.toggle("active");
 });
+
+const closeMenu = document.querySelector(".close-menu");
+closeMenu?.addEventListener("click", () => {
+  console.log("Funciono");
+  hamburgerMenu?.classList.toggle("active");
+});

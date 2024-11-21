@@ -66,19 +66,30 @@ body {
 .toogle-menu.active {
   display: block;
   position: fixed;
-  top: 100px;
-  left: 90dvw;
-  padding: 20px;
-  border: none;
-  border-radius: 16px;
-  background-color: #062309;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 1;
 }
 
 .toogle-menu ul {
   color: #fbfada;
+  font-size: 2rem;
   list-style: none;
-  display: block;
+  display: flex;
+  gap: 10px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.toogle-menu img {
+  padding-left: 20px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .menu-header {
