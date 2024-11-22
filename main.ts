@@ -1,52 +1,36 @@
-import { fecthPlants } from "./src/api/api";
 console.log("Hello PlantiWiki");
-/* console.log(fecthPlants()); */
 
 const login = document.getElementById("login");
 
 const loginPage = () => {
+  console.log("Funciono");
+
   window.location.href = "./src/login/index.html";
 };
 
-login?.addEventListener("click", () => {
-  console.log("Funciono");
-  loginPage();
-});
-
-let lastScrollY = window.scrollY; // initial scroll position
-
-window.addEventListener("scroll", () => {
-  const div = document.getElementById("hide-menu-div");
-  const hamburger = document.querySelector(".hamburger-div");
-  if (window.scrollY > lastScrollY) {
-    if (
-      div !== null &&
-      div !== undefined &&
-      div &&
-      hamburger instanceof HTMLDivElement
-    ) {
-      div.style.display = "none";
-      hamburger.style.display = "flex";
-    }
-  } else {
-    if (
-      div !== null &&
-      div !== undefined &&
-      div &&
-      hamburger instanceof HTMLDivElement
-    ) {
-      div.style.display = "flex";
-      hamburger.style.display = "none";
-    }
-  }
-});
+if (
+  login !== null &&
+  login !== undefined &&
+  login instanceof HTMLAnchorElement
+) {
+  login.addEventListener("click", () => {
+    loginPage();
+  });
+}
 
 const hamburgerButton = document.querySelector(".hamburger-svc");
 const hamburgerMenu = document.querySelector(".toogle-menu");
 
-hamburgerButton?.addEventListener("click", () => {
-  hamburgerMenu?.classList.toggle("active");
-});
+if (
+  hamburgerButton !== null &&
+  hamburgerButton !== undefined &&
+  hamburgerButton instanceof HTMLImageElement &&
+  hamburgerMenu instanceof HTMLElement
+) {
+  hamburgerButton.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("active");
+  });
+}
 
 const closeMenu = document.querySelector(".close-menu");
 closeMenu?.addEventListener("click", () => {

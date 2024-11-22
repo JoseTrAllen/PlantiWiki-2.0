@@ -31,6 +31,13 @@ body {
   font-family: "Funnel Display", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .mobile-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
 .header {
   position: fixed;
   width: 100dvw;
@@ -46,7 +53,7 @@ body {
 }
 
 .hamburger-div {
-  display: none;
+  display: flex;
   gap: 8px;
 }
 
@@ -89,41 +96,25 @@ body {
 .toogle-menu img {
   padding-left: 20px;
   padding-top: 20px;
-  cursor: pointer;
 }
 
-.menu-header {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
+.toogle-menu img:hover {
+  padding-left: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.list-hamburger a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 12px;
 }
 
 a {
   text-decoration: none;
   color: #fbfada;
   letter-spacing: 2px;
-}
-
-.header a:hover {
-  text-decoration: underline;
-  text-underline-offset: 12px;
-  cursor: pointer;
-}
-
-.header a:active {
-  transform: scale(0.9);
-}
-
-.log-menu {
-  width: 35px;
-  border: 2px solid #fbfada;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.log-menu:hover {
-  transform: scale(1.1);
 }
 
 .title-section {
@@ -140,16 +131,7 @@ a {
   background-position: center;
 }
 
-@media (max-width: 1024px) {
-  .title-section {
-  }
-  .menu-header {
-    display: none;
-  }
-  .hamburger-div {
-    display: flex;
-  }
-}
+/* Other section */
 
 .intro-section {
   padding: 0 50px;
