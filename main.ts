@@ -30,6 +30,9 @@ if (
   hamburgerButton.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
   });
+  hamburgerButton.addEventListener("touchstart", () => {
+    hamburgerMenu.classList.toggle("active");
+  });
 }
 
 const closeMenu = document.querySelector(".close-menu");
