@@ -5,7 +5,7 @@ const login = document.getElementById("login");
 const loginPage = () => {
   console.log("Funciono");
 
-  window.location.href = "./src/login/login.html";
+  window.location.href = "/src/login/login.html";
 };
 
 if (
