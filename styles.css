@@ -36,6 +36,17 @@ body {
     flex-direction: column;
     gap: 5px;
   }
+  .header {
+    gap: 10px;
+  }
+  .title-section {
+  }
+  .intro-section h1 {
+    display: none;
+  }
+  .intro-section h2 {
+    padding: 0px 20px;
+  }
 }
 
 .header {
@@ -132,10 +143,6 @@ a {
 }
 
 /* Other section */
-
-.intro-section {
-  padding: 0 50px;
-}
 
 .intro-section h1 {
   font-size: 5rem;
