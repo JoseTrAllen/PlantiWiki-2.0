@@ -2,7 +2,7 @@ console.log("Hello PlantiWiki");
 
 const login = document.getElementById("login");
 
-const loginPage = () => {
+/* const loginPage = () => {
   console.log("Funciono");
 
   window.location.href = "/src/login/login.html";
@@ -16,7 +16,7 @@ if (
   login.addEventListener("click", () => {
     loginPage();
   });
-}
+} */
 
 const hamburgerButton = document.querySelector(".hamburger-svc");
 const hamburgerMenu = document.querySelector(".toogle-menu");
