@@ -211,6 +211,8 @@ p {
   .header {
     gap: 10px;
     position: absolute;
+    justify-content: center;
+    padding-top: 30px;
   }
   .intro-section h1 {
     display: none;
