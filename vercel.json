@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/acceder",
-      "destination": "/src/login/login.html"
-    }
-  ]
+  "public": "src"
 }
