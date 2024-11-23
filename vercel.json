@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/acceder",
-      "destination": "/login.html"
+      "destination": "/src/login/login.html"
     }
   ]
 }
