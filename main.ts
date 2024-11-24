@@ -1,23 +1,3 @@
-console.log("Hello PlantiWiki");
-
-const login = document.getElementById("login");
-
-/* const loginPage = () => {
-  console.log("Funciono");
-
-  window.location.href = "/src/login/login.html";
-};
-
-if (
-  login !== null &&
-  login !== undefined &&
-  login instanceof HTMLAnchorElement
-) {
-  login.addEventListener("click", () => {
-    loginPage();
-  });
-} */
-
 const hamburgerButton = document.querySelector(".hamburger-svc");
 const hamburgerMenu = document.querySelector(".toogle-menu");
 
@@ -36,7 +16,15 @@ if (
 }
 
 const closeMenu = document.querySelector(".close-menu");
-closeMenu?.addEventListener("click", () => {
-  console.log("Funciono");
-  hamburgerMenu?.classList.toggle("active");
-});
+if (
+  closeMenu !== null &&
+  closeMenu !== undefined &&
+  closeMenu instanceof HTMLImageElement &&
+  hamburgerMenu instanceof HTMLElement
+) {
+  closeMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("active");
+  });
+}
+
+console.log("Hello PlantiWiki");

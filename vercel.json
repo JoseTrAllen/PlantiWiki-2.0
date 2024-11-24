@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/acceder",
-      "destination": "/src/login/login.html",
-      "permanent": false
-    }
-  ]
-}
