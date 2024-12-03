@@ -3,9 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>PlantiWiki-Login</title>
   </head>
   <body>
-    <h1>PRUEBA</h1>
+    <section class="login-section">
+      <div class="login-form">
+        <img class="logo" src="../../assets/logoBlanco.png" alt="" />
+        <h2>Accede a tu cuenta</h2>
+        <form>
+          <input id="user-input" type="text" placeholder="Usuario" />
+          <input id="password-input" type="password" placeholder="Contraseña" />
+          <button id="login-button">Acceder</button>
+        </form>
+      </div>
+      <div class="create-account">
+        <h2>¿Todavía no estás registrad@?</h2>
+        <h3>¡Descubre el poder de las plantas con PlantiWiki!</h3>
+        <p>
+          Regístrate ahora y lleva tu pasión por las plantas al siguiente nivel.
+        </p>
+        <button id="create-account-button">Regístrate</button>
+      </div>
+    </section>
+    <script type="module" src="ui.ts"></script>
   </body>
 </html>

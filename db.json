@@ -1,6 +1,76 @@
 {
-  "plantas": [
-    { "id": 1, "nombre": "Aloe Vera", "descripcion": "Planta medicinal" },
-    { "id": 2, "nombre": "Orquídea", "descripcion": "Planta ornamental" }
+  "plants": [
+    {
+      "id": 1,
+      "name": "Monstera deliciosa",
+      "scientificName": "Monstera deliciosa",
+      "description": "Planta tropical de hojas grandes y perforadas, ideal para interiores.",
+      "lightRequirements": "Luz indirecta brillante",
+      "wateringFrequency": "Semanal",
+      "restPeriod": {
+        "hasRestPeriod": true,
+        "duration": "3 meses",
+        "conditions": "Climas fríos"
+      },
+      "soilType": "Sustrato con buen drenaje",
+      "lastWatered": "2024-11-25",
+      "lastRepotted": "2024-08-10",
+      "imageUrl": "https://example.com/monstera.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sansevieria",
+      "scientificName": "Sansevieria trifasciata",
+      "description": "Conocida como lengua de suegra, es una planta muy resistente.",
+      "lightRequirements": "Luz indirecta baja a moderada",
+      "wateringFrequency": "Cada 2 semanas",
+      "restPeriod": {
+        "hasRestPeriod": false,
+        "duration": null,
+        "conditions": null
+      },
+      "soilType": "Sustrato arenoso",
+      "lastWatered": "2024-11-20",
+      "lastRepotted": "2023-12-15",
+      "imageUrl": "https://example.com/sansevieria.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "plantLover",
+      "email": "plantlover@example.com",
+      "password": "hashed_password",
+      "savedPlants": [
+        {
+          "plantId": 1,
+          "nickname": "Mi Monstera",
+          "lastWatered": "2024-11-26",
+          "lastRepotted": "2024-07-20",
+          "customNotes": "Poner cerca de la ventana pero sin sol directo."
+        },
+        {
+          "plantId": 2,
+          "nickname": "Lengua de Suegra",
+          "lastWatered": "2024-11-24",
+          "lastRepotted": "2023-11-20",
+          "customNotes": "Regar solo cuando la tierra esté completamente seca."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "greenThumb",
+      "email": "greenthumb@example.com",
+      "password": "hashed_password",
+      "savedPlants": []
+    },
+    {
+      "id": 3,
+      "username": "usuario",
+      "email": "usuario@example.com",
+      "password": "12345",
+      "savedPlants": []
+    }
   ]
 }

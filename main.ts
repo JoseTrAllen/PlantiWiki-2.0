@@ -10,9 +10,9 @@ if (
   hamburgerButton.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
   });
-  hamburgerButton.addEventListener("touchstart", () => {
+  /*   hamburgerButton.addEventListener("touchstart", () => {
     hamburgerMenu.classList.toggle("active");
-  });
+  }); */
 }
 
 const closeMenu = document.querySelector(".close-menu");
@@ -24,6 +24,18 @@ if (
 ) {
   closeMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
+  });
+}
+
+const closeAnchors = document.querySelectorAll("a");
+
+if (hamburgerMenu instanceof HTMLElement && closeAnchors.length > 0) {
+  closeAnchors.forEach((anchor) => {
+    if (anchor instanceof HTMLAnchorElement) {
+      anchor.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("active");
+      });
+    }
   });
 }
 
