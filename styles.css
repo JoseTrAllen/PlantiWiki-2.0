@@ -300,6 +300,18 @@ a {
   color: #000000;
 }
 
+@media (max-height: 450px) {
+  .intro-section h1 {
+    display: none;
+  }
+  #google-logo {
+    width: 150px;
+  }
+  #appStore-logo {
+    width: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     gap: 10px;
@@ -314,7 +326,12 @@ a {
     font-size: 1.6rem;
   }
   .mobile-links {
-    flex-direction: column;
     gap: 5px;
+  }
+  #google-logo {
+    width: 150px;
+  }
+  #appStore-logo {
+    width: 150px;
   }
 }
