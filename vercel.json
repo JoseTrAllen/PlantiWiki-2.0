@@ -1,4 +1,5 @@
 {
-  "rewrites": [{ "source": "/login", "destination": "/src/login/login.html" }],
+  "rewrites": [{ "source": "/(.*)" }],
+  "destination": "/",
   "cleanUrls": true
 }
