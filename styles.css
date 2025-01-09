@@ -392,6 +392,14 @@ footer {
   gap: 25px;
 }
 
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fbfada;
+}
+
 @media (max-width: 768px) {
   .header {
     gap: 10px;
