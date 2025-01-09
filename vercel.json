@@ -1,3 +1,16 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+
+  "builds": [
+    {
+      "src": "src/login/login.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/login",
+      "dest": "/src/login/login.html"
+    }
+  ]
 }
