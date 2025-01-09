@@ -9,7 +9,7 @@ export const verifyUser = async (user: string, password: string) => {
 
   if (isValid) {
     console.log("Usuario correcto");
-    window.location.href = "/src/userProfile/userProfile.html";
+    window.location.href = `/src/userProfile/userProfile.html?username=${isValid.username}`;
   } else {
     console.log("Usuario o contraseña incorrecta");
   }

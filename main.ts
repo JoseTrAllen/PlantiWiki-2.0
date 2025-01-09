@@ -39,4 +39,21 @@ if (hamburgerMenu instanceof HTMLElement && closeAnchors.length > 0) {
   });
 }
 
+const cards = document.querySelectorAll(".card");
+
+// Crear el observador
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible"); // Añadir clase cuando sea visible
+      observer.unobserve(entry.target); // Dejar de observar la tarjeta (opcional)
+    }
+  });
+});
+
+// Vincular el observador a cada tarjeta
+cards.forEach((card) => {
+  observer.observe(card);
+});
+
 console.log("Hello PlantiWiki");

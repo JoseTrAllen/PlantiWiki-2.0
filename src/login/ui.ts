@@ -36,7 +36,8 @@ if (
   button !== null &&
   button instanceof HTMLButtonElement
 ) {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
     const form = document.querySelector("form");
     const user = userInputValue();
     const password = passwordInputValue();
