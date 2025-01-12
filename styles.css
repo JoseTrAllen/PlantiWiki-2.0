@@ -4,22 +4,13 @@
   --color-1: #97b280;
   --color-2: #062309;
   --color-3: #153c2b;
-  /* Los colores 4 y 5 son degradados de una misma card*/
   --color-4: #1a4327;
   --color-5: #1a4028;
-  /* Los colores 6 y 7 son degradados de una misma card*/
   --color-6: #bde1ae;
   --color-7: #badbab;
-  /* Los colores 8 y 9 son degradados de una misma card*/
   --color-8: #658c63;
   --color-9: #396341;
 }
-
-/* Las fuentes a usar son:
-- Merriweather
-- Montserrat
-- Lato
-*/
 
 html {
   scroll-behavior: smooth;
@@ -120,7 +111,6 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* Other section */
@@ -333,9 +323,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: auto;
   gap: 25px;
-  padding: 0px 50px;
+  padding: 10px;
 }
 
 .device-text {
@@ -390,6 +379,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  cursor: pointer;
 }
 
 .footer-info {
@@ -398,6 +388,11 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   color: #fbfada;
+}
+
+.footer-info p {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -424,7 +419,7 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .intro-section h1 {
     display: none;
   }
@@ -444,5 +439,18 @@ footer {
 
   .mobile-links-device-section img {
     width: 100px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+  .logo-image {
+    width: 180px;
+  }
+
+  .footer-links {
+    flex-direction: column;
   }
 }
