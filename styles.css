@@ -395,13 +395,23 @@ footer {
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+  .intro-section h1 {
+    display: none;
+  }
   .header {
     gap: 10px;
     position: absolute;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 30px;
   }
+
+  .title-section {
+    background-image: url(/assets/sliderMonstera.jpg);
+  }
+}
+
+@media (max-width: 768px) {
   .intro-section h1 {
     display: none;
   }
