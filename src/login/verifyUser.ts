@@ -4,7 +4,7 @@ import { User } from "../../model.ts";
 export const verifyUser = async (user: string, password: string) => {
   const users: User[] = await fetchUsers();
   const isValid = users.find(
-    (u) => u.username === user && u.password === password
+    (u) => u.email === user && u.password === password
   );
 
   if (isValid) {

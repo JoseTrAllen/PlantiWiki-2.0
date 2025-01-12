@@ -32,5 +32,6 @@ export interface User {
   username: string;
   email: string;
   password: string; // En producción, asegúrate de no manejar contraseñas directamente
+  photo: string;
   savedPlants: SavedPlant[]; // Lista de plantas guardadas
 }

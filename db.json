@@ -67,10 +67,26 @@
     },
     {
       "id": 3,
-      "username": "usuario",
-      "email": "usuario@example.com",
+      "username": "José",
+      "email": "user@example.com",
       "password": "12345",
-      "savedPlants": []
+      "photo": "/assets/userPhoto/user3.png",
+      "savedPlants": [
+        {
+          "plantId": 1,
+          "nickname": "Mi Monstera",
+          "lastWatered": "2024-11-26",
+          "lastRepotted": "2024-07-20",
+          "customNotes": "Poner cerca de la ventana pero sin sol directo."
+        },
+        {
+          "plantId": 2,
+          "nickname": "Lengua de Suegra",
+          "lastWatered": "2024-11-24",
+          "lastRepotted": "2023-11-20",
+          "customNotes": "Regar solo cuando la tierra esté completamente seca."
+        }
+      ]
     }
   ]
 }
