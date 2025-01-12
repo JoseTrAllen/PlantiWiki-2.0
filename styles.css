@@ -405,10 +405,6 @@ footer {
     justify-content: space-between;
     padding-top: 30px;
   }
-
-  .title-section {
-    background-image: url(/assets/sliderMonstera.jpg);
-  }
 }
 
 @media (max-width: 768px) {
@@ -430,6 +426,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .title-section {
+    background-attachment: scroll;
+  }
   .intro-section h1 {
     display: none;
   }
