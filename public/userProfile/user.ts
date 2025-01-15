@@ -4,7 +4,7 @@ import {
   displayUserNamePlants,
   displayPlantInformation,
   displayUserPlants,
-} from "../../src/userProfile/ui";
+} from "../../public/userProfile/ui";
 import { fetchUsers } from "../api/usersApi";
 import { fecthPlants } from "../api/plantsApi";
 

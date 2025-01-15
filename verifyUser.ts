@@ -1,4 +1,4 @@
-import { fetchUsers } from "./src/api/usersApi.ts";
+import { fetchUsers } from "./public/api/usersApi.ts";
 import { User } from "./model.ts";
 
 export const verifyUser = async (user: string, password: string) => {
@@ -9,7 +9,7 @@ export const verifyUser = async (user: string, password: string) => {
 
   if (isValid) {
     console.log("Usuario correcto");
-    window.location.href = `/src/userProfile/index.html?username=${isValid.username}`;
+    window.location.href = `/public/userProfile/index.html?username=${isValid.username}`;
   } else {
     console.log("Usuario o contraseña incorrecta");
   }
