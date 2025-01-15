@@ -1,5 +1,5 @@
-import { fetchUsers } from "../api/usersApi.ts";
-import { User } from "../../model.ts";
+import { fetchUsers } from "./src/api/usersApi.ts";
+import { User } from "./model.ts";
 
 export const verifyUser = async (user: string, password: string) => {
   const users: User[] = await fetchUsers();
