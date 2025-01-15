@@ -82,6 +82,17 @@ body {
   height: 100dvh;
 }
 
+.close-menu-container {
+  width: 100dvw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toogle-menu .close-menu {
+  position: absolute;
+  padding: 40px;
+}
+
 .toogle-menu img:hover {
   cursor: pointer;
   transform: scale(1.1);

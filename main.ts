@@ -8,11 +8,8 @@ if (
   hamburgerMenu instanceof HTMLElement
 ) {
   hamburgerButton.addEventListener("click", () => {
-    hamburgerMenu.classList.toggle("active");
+    hamburgerMenu.classList.add("active");
   });
-  /*   hamburgerButton.addEventListener("touchstart", () => {
-    hamburgerMenu.classList.toggle("active");
-  }); */
 }
 
 const closeMenu = document.querySelector(".close-menu");
@@ -23,7 +20,7 @@ if (
   hamburgerMenu instanceof HTMLElement
 ) {
   closeMenu.addEventListener("click", () => {
-    hamburgerMenu.classList.toggle("active");
+    hamburgerMenu.classList.remove("active");
   });
 }
 
@@ -33,7 +30,7 @@ if (hamburgerMenu instanceof HTMLElement && closeAnchors.length > 0) {
   closeAnchors.forEach((anchor) => {
     if (anchor instanceof HTMLAnchorElement) {
       anchor.addEventListener("click", () => {
-        hamburgerMenu.classList.toggle("active");
+        hamburgerMenu.classList.remove("active");
       });
     }
   });

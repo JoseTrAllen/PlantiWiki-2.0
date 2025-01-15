@@ -70,7 +70,7 @@
       "username": "José",
       "email": "user@example.com",
       "password": "12345",
-      "photo": "/assets/userPhoto/user3.png",
+      "photo": "/assets/user3.png",
       "savedPlants": [
         {
           "plantId": 1,

@@ -18,7 +18,7 @@ export interface Plant {
 }
 
 // Interface para una planta guardada en el perfil del usuario
-interface SavedPlant {
+export interface SavedPlant {
   plantId: number; // ID de la planta correspondiente
   nickname: string; // Nombre personalizado
   lastWatered: string; // Fecha en formato ISO (YYYY-MM-DD)
