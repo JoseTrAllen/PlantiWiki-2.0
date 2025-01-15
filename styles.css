@@ -110,6 +110,33 @@ a {
   letter-spacing: 2px;
 }
 
+.form-menu-container {
+}
+
+.login-form-menu {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fbfada;
+  border-radius: 8px;
+  padding: 5px 20px;
+}
+
+.login-form-menu input {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+}
+.login-form-menu button {
+  padding: 5px 20px;
+  background-color: #97b280;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
 .title-section {
   display: flex;
   flex-direction: column;
