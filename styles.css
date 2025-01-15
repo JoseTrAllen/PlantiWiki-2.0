@@ -459,7 +459,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .title-section {
+  .background-section {
     background-attachment: scroll;
   }
   .intro-section h1 {
