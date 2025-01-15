@@ -146,9 +146,6 @@ form input {
   color: #1a4327;
 }
 
-#create-account-button:hover {
-}
-
 @media (max-width: 985px) {
   .login-section {
     flex-direction: column;
