@@ -1,5 +1,3 @@
-import { verifyUser } from "./verifyUser";
-
 const userInputValue = () => {
   const userInput = document.getElementById("user-input");
 
@@ -52,5 +50,3 @@ if (
     }
   });
 }
-
-console.log("Funciono");
