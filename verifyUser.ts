@@ -11,7 +11,7 @@ export const verifyUser = async (user: string, password: string) => {
     console.log("Usuario correcto");
     console.log(isValid.email, isValid.password);
 
-    window.location.href = `/public/userProfile/index.html?username=${isValid.username}`;
+    window.location.href = `/userProfile/index.html?username=${isValid.username}`;
   } else {
     console.log(user, password);
 
