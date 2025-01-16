@@ -24,7 +24,7 @@ const loadUserData = async () => {
         displayUserPhotoProfile(user);
         displayUserName(user);
         displayUserNamePlants(user.savedPlants);
-        displayPlantInformation(plants);
+        /* displayPlantInformation(plants); */
         displayUserPlants(plants, user.savedPlants);
       }
     } catch (e) {

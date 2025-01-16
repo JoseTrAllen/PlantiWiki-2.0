@@ -29,6 +29,7 @@ export const displayUserNamePlants = (plants: SavedPlant[]) => {
   });
 };
 
+//Esta función sería con la que se trabajaría la información de las plantas
 export const displayPlantInformation = (allPlants: Plant[]) => {
   const div = document.getElementById("user-container");
   const ul = document.createElement("ul");

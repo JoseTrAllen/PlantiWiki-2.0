@@ -1,8 +1,13 @@
+import { Plant } from "../../model";
+
+const plantsApi = "https://67895c042c874e66b7d88056.mockapi.io/api/v1/plants";
+
 export const fecthPlants = async () => {
   try {
-    const response = await fetch("http://localhost:3000/plants");
+    const response = await fetch(plantsApi);
     const data = await response.json();
-    return data;
+    const plants: Plant[] = data[0].plants;
+    return plants;
   } catch (error) {
     throw new Error("La llamada ha fallado");
   }
