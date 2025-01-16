@@ -6,7 +6,7 @@ import {
   displayUserPlants,
 } from "../../public/userProfile/ui";
 import { fetchUsers } from "../api/usersApi";
-import { fecthPlants } from "../api/plantsApi";
+import { fetchPlants } from "../api/plantsApi";
 
 const getUserFromURL = () => {
   const params = new URLSearchParams(window.location.search);
@@ -18,7 +18,7 @@ const loadUserData = async () => {
   if (userName) {
     try {
       const users = await fetchUsers();
-      const plants = await fecthPlants();
+      const plants = await fetchPlants();
       const user = users.find((u) => u.username === userName);
       if (user) {
         displayUserPhotoProfile(user);
