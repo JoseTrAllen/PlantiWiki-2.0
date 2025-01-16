@@ -2,7 +2,7 @@ import {
   displayUserName,
   displayUserPhotoProfile,
   displayUserNamePlants,
-  displayPlantInformation,
+  /* displayPlantInformation, */
   displayUserPlants,
 } from "../../public/userProfile/ui";
 import { fetchUsers } from "../api/usersApi";
