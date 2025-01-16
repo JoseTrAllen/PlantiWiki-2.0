@@ -42,8 +42,11 @@ export const displayPlantInformation = (allPlants: Plant[]) => {
   });
 };
 
-export const displayUserPlants = (allPlants: Plant[], user: SavedPlant[]) => {
-  user.forEach((u) => {
+export const displayUserPlants = (
+  allPlants: Plant[],
+  userPlant: SavedPlant[]
+) => {
+  userPlant.forEach((u) => {
     allPlants.forEach((plant) => {
       if (u.plantId === plant.id) {
         console.log(u.nickname);
