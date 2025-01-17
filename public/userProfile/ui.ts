@@ -20,12 +20,14 @@ export const displayUserName = (name: User) => {
 
 export const displayUserNamePlants = (plants: SavedPlant[]) => {
   const div = document.getElementById("user-container");
-  const ul = document.createElement("ul");
+
   plants.forEach((plant) => {
-    const list = document.createElement("li");
-    list.innerText = plant.nickname;
-    ul?.appendChild(list);
-    div?.appendChild(ul);
+    const h3 = document.createElement("h3");
+    const p = document.createElement("p");
+    h3.innerText = plant.nickname;
+    p.innerText = plant.customNotes;
+    div?.appendChild(h3);
+    div?.appendChild(p);
   });
 };
 
@@ -49,10 +51,7 @@ export const displayUserPlants = (
   userPlant.forEach((u) => {
     allPlants.forEach((plant) => {
       if (u.plantId === plant.id) {
-        console.log(u.nickname);
-        console.log(u.customNotes);
-        console.log(u.lastWatered);
-        console.log(u.lastRepotted);
+        console.log(u.nickname, ".", u.customNotes, plant.description);
       }
     });
   });

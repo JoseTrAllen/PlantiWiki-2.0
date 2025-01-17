@@ -2,7 +2,7 @@ import {
   displayUserName,
   displayUserPhotoProfile,
   displayUserNamePlants,
-  /* displayPlantInformation, */
+  displayPlantInformation,
   displayUserPlants,
 } from "../../public/userProfile/ui";
 import { fetchUsers } from "../api/usersApi";
@@ -19,7 +19,9 @@ const loadUserData = async () => {
     try {
       const users = await fetchUsers();
       const plants = await fetchPlants();
+
       const user = users.find((u) => u.username === userName);
+
       if (user) {
         displayUserPhotoProfile(user);
         displayUserName(user);
