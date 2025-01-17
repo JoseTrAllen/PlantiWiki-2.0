@@ -35,7 +35,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": false, // Cambio: habilita la emisión de archivos .js
-
+    "outDir": "./dist",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
